@@ -6,10 +6,26 @@
     <title>Tabelas</title>
 
     <style> 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ table{
+    width: 500px;
+ }
 
+ td,th{
+    border: 1px solid black;
+     padding: 10px;
+ }
 
+thead, tfoot{
+    background-color: rgb(92, 90, 92);
+    color : white;
+}
 
-
+td.num{
+    text-align: right;
+}
 
     </style>
 
@@ -40,15 +56,45 @@
 
 
 <tbody>
+
 <tr>
     <td>São Paulo</td>
-    <td>45 919 049</td>
+    <td class='num'>45.919.049</td>
 </tr>
+
+<tr>
+    <td>Minas Gerais</td>
+    <td class='num'>21.411.923</td>
+</tr>
+
+<tr>
+     <td>Rio de Janeiro</td>
+     <td class='num'>13.864.964</td>
+</tr>
+
+<tr>
+    <td>Bahia</td>
+    <td class='num'>14.930.634</td>
+</tr>
+
+<tr>
+    <td>Paraná</td>
+    <td class='num'> 11.228.555</td>
+</tr>
+
+<tr>
+    <td>Rio Grande do Sul</td>
+    <td class='num'>888.964.752</td>
+</tr>
+
 </tbody>
 
 
 <tfoot>
-
+<tr>
+    <th>Total Habitantes</th>
+    <th class='num'> <strong>185.289.000</strong></th>
+</tr>
 </tfoot>
 
 </table>
