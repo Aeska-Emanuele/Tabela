@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 300px;
+            height: 400px;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            border: 2px solid black;
+            text-align: center; /*---Alinhamento Horizontal*/
+            vertical-align: middle; /*---Alinhamento Vertical*/
+        }
+
+        .numero{
+            text-align: right; /*---Para colocar numeros a direita, cmo no excel*/ /*colocar a classe normal no td*/
+        }
+        </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+
+    <table>
+
+        <tr> <!--Primeira linha-->
+               <td>A</td>
+               <td colspan="2">B</td>
+               
+        </tr>
+
+        <tr> <!--Segunda linha-->
+            <td rowspan="2">D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+
+        <tr> <!--Terceira linha-->
+            
+            <td>G</td>
+            <td rowspan="3">H</td>
+        </tr>
+
+        <tr> <!--Quarta linha-->
+            <td></td>
+            <td>K</td>
+        </tr>
+
+         <tr> <!--Quinta linha-->
+            <td>L</td>
+            <td>M</td>
+        </tr>
+
+    </table>
+</body>
+</html>
