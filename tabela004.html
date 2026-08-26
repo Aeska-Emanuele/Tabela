@@ -24,12 +24,34 @@
             border: 1px solid black;
             padding: 8px;
         }
+
+        .destaque{
+            background-color: green;
+        }
+
+        col.cnome{
+            background-color: aqua;
+        }
+
+        col.csexo, col.cidade{
+            background-color: blueviolet;
+        }
+
     </style>
 </head>
 
 <body>
     <h1>Exercicios Tabela</h1>
+
     <table>
+
+<colgroup>
+    <col class="cnome">
+    <col class="csexo">
+    <col class="cidade">
+    <col class="cprof">
+</colgroup>
+
 
     <caption>Cadastro</caption>
 
@@ -61,7 +83,7 @@
     <td>Médica</td>
 </tr>
 
-<tr>
+<tr class="destaque">
     <td>Gustavo</td>
     <td>M</td>
     <td>42</td>
